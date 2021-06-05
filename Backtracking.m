@@ -4,7 +4,7 @@
 %in order to compare the effects of different stepsize method, we begin from 1. Steepest with different stepsize method
 %1.a Backtracking + Steepest
 %From the paper, typically one takes \gamma \in [0.5, 0.8], c \in [0.001, 1] with adjustments depending on the cost of function evaluation and degree of nonlinearity
-function [sol, hist, time] = Linesearchcover(func, grad, x0)
+function [sol, hist, time] = Backtracking(func, grad, x0)
 	tic;
 	gamma = 0.6;
 	c = 0.01;
