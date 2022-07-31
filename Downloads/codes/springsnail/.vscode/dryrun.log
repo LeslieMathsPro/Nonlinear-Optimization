@@ -1,0 +1,9 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory `/Users/xuliwei/Downloads/codes/springsnail'
+g++ -c log.cpp -o log.o
+g++ -c fdwrapper.cpp -o fdwrapper.o
+g++ -c conn.cpp -o conn.o
+g++ -c mgr.cpp -o mgr.o
+g++ processpool.h log.o fdwrapper.o conn.o mgr.o main.cpp -o springsnail
+make: Leaving directory `/Users/xuliwei/Downloads/codes/springsnail'
+ 
